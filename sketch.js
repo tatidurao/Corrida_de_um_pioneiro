@@ -61,6 +61,7 @@ broxuraG=new Group();
 
 var title = createElement('h2');
 var title2 = createElement('h2');
+var title3 = createElement('h3');
 
 var buttonAndressa = createButton('Andressa');
 var buttonAngela = createButton('Angela');
@@ -87,13 +88,19 @@ var buttontati = createButton('Tátila');
 var buttonVictor = createButton('Victor');
 var image = "";
 
-title.html("Corrida de um pioneiro");
-title.position(10, 580);
-title.style('font-size', '60px');
-title.style('color', 'skyblue');
+title3.html("Clique no seu nome para jogar:");
+title3.position(5, 5);
+title3.style('font-size', '20px');
+title3.style('color', 'black');
 
-title2.html("Durante a corrida evite distrações como tristeza, ladrões de tempo e dinheiro.");
-title2.position(10, 750);
+title.html("Caminhada de um pioneiro");
+title.position(10, 600);
+title.style('font-size', '60px');
+title.style('color', 'black');
+
+
+title2.html("Durante o percurso evite distrações como tristeza, ladrões de tempo e dinheiro.");
+title2.position(10, 770);
 title2.style('font-size', '27px');
 title2.style('color', 'black');
 
@@ -215,6 +222,8 @@ buttonVictor.style('background', 'lightblue');
 buttontati.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -242,10 +251,15 @@ buttontati.mousePressed(() => {
   image = createImg("tati.PNG")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonruan.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -273,10 +287,15 @@ buttonruan.mousePressed(() => {
   image = createImg("ruan.png")
   image.position(canW-150,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonAndressa.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -304,10 +323,15 @@ buttonAndressa.mousePressed(() => {
   image = createImg("andressa.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonAngela.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -335,10 +359,15 @@ buttonAngela.mousePressed(() => {
   image = createImg("angela.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonAntonio.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -366,10 +395,15 @@ buttonAntonio.mousePressed(() => {
   image = createImg("antonio.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonBruno.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -397,10 +431,15 @@ buttonBruno.mousePressed(() => {
   image = createImg("bruno.png")
   image.position(canW-130,50)
   image.size(70,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonCecilia.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -428,10 +467,15 @@ buttonCecilia.mousePressed(() => {
   image = createImg("cecilia.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonCleonice.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -459,10 +503,15 @@ buttonCleonice.mousePressed(() => {
   image = createImg("cleonice.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonEliana.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -490,10 +539,15 @@ buttonEliana.mousePressed(() => {
   image = createImg("eliana.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonElvis.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonIsaira.hide()
   buttonBruno.hide()
@@ -521,10 +575,15 @@ buttonElvis.mousePressed(() => {
   image = createImg("elvis.png")
   image.position(canW-130,50)
   image.size(70,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonFernanda.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -552,10 +611,15 @@ buttonFernanda.mousePressed(() => {
   image = createImg("fernanda.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonFranciele.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -583,10 +647,15 @@ buttonFranciele.mousePressed(() => {
   image = createImg("franciele.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonGeovana.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -614,10 +683,15 @@ buttonGeovana.mousePressed(() => {
   image = createImg("geovana.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonIsabela.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonIsaira.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
@@ -645,10 +719,15 @@ buttonIsabela.mousePressed(() => {
   image = createImg("isa.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonIsaira.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -676,10 +755,15 @@ buttonIsaira.mousePressed(() => {
   image = createImg("isaira.png")
   image.position(canW-130,50)
   image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonLuis.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -707,10 +791,15 @@ buttonLuis.mousePressed(() => {
   image = createImg("luismiguel.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonMariaJ.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -738,10 +827,15 @@ buttonMariaJ.mousePressed(() => {
   image = createImg("maria jose.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonMariaS.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -769,10 +863,15 @@ buttonMariaS.mousePressed(() => {
   image = createImg("mariasanches.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonMariaH.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -800,10 +899,15 @@ buttonMariaH.mousePressed(() => {
   image = createImg("mariasocorro.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonNaty.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -831,10 +935,15 @@ buttonNaty.mousePressed(() => {
   image = createImg("naty.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonSilvia.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -862,10 +971,15 @@ buttonSilvia.mousePressed(() => {
   image = createImg("silvia.png")
   image.position(canW-130,50)
   image.size(80,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
 });
 buttonJoao.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -893,10 +1007,15 @@ buttonJoao.mousePressed(() => {
   image = createImg("joao.png")
   image.position(canW-130,50)
   image.size(60,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 buttonVictor.mousePressed(() => {
   title.hide()
   title2.hide()
+  title3.hide()
   buttonAntonio.hide()
   buttonBruno.hide()
   buttonCecilia.hide()
@@ -924,6 +1043,10 @@ buttonVictor.mousePressed(() => {
   image = createImg("vitor.png")
   image.position(canW-130,50)
   image.size(70,80);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'blue');
 });
 }
 
@@ -941,7 +1064,8 @@ function draw() {
    if(path.y >canH){
      path.y = canH/2;
    }
-  
+
+   
     createCash();
     createCelular();
     createTriste();
@@ -969,6 +1093,7 @@ function draw() {
     }
     else{
       if(cashG.isTouching(boy) || CelularG.isTouching(boy) || tristeG.isTouching(boy)  ) {
+       
         gameState=END;
         
         boy.addAnimation("SahilRunning",endImg);
@@ -998,7 +1123,13 @@ function draw() {
   drawSprites();
   textSize(20);
   fill(255);
-  text("Tesouro espiritual: "+ treasureCollection,canW-200,30);
+  text("Tesouro espiritual: "+ treasureCollection,canW-220,30);
+
+  
+  text(" Toque",40,canH-70);
+  text("<<<<<< ",40,canH-50);
+  text("Toque ",canW-100,canH-70);
+  text(">>>>>> ",canW-100,canH-50);
  
   
   }
