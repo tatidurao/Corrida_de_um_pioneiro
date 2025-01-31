@@ -71,9 +71,10 @@ var buttonCecilia = createButton('Cecilia');
 var buttonCleonice = createButton('Cleonice');
 var buttonEliana = createButton('Eliana');
 var buttonElvis = createButton('Elvis');
-var buttonFranciele = createButton('Fran');
+var buttonFranciele = createButton('Franciele');
 var buttonFernanda = createButton('Fernanda');
 var buttonGeovana = createButton('Geovana');
+var buttonGilce = createButton('Gilce');
 var buttonIsabela = createButton('Isabela');
 var buttonIsaira = createButton('Izaira');
 var buttonJoao = createButton('Joao');
@@ -92,17 +93,21 @@ title3.html("Clique no seu nome para jogar:");
 title3.position(5, 5);
 title3.style('font-size', '20px');
 title3.style('color', 'black');
+title3.style('align-items', 'center');
+
 
 title.html("Caminhada de um pioneiro");
 title.position(10, 600);
-title.style('font-size', '60px');
+title.style('font-size', '50px');
 title.style('color', 'black');
+title.style('align-items', 'center');
 
 
 title2.html("Durante o percurso evite distrações como tristeza, ladrões de tempo e dinheiro.");
 title2.position(10, 770);
 title2.style('font-size', '27px');
 title2.style('color', 'black');
+title2.style('align-items', 'center');
 
 buttonAndressa.position(10,50);
 buttonAndressa.style('width', '200px');
@@ -154,70 +159,116 @@ buttonFernanda.style('width', '200px');
 buttonFernanda.style('height', '40px');
 buttonFernanda.style('background', 'lightpink');
 
-buttonGeovana.position(10,300);
+buttonGilce.position(10,300);
+buttonGilce.style('width', '200px');
+buttonGilce.style('height', '40px');
+buttonGilce.style('background', 'lightpink');
+
+buttonGeovana.position(220,300);
 buttonGeovana.style('width', '200px');
 buttonGeovana.style('height', '40px');
 buttonGeovana.style('background', 'lightpink');
 
-buttonIsabela.position(220,300);
+
+buttonIsabela.position(10,350);
 buttonIsabela.style('width', '200px');
 buttonIsabela.style('height', '40px');
 buttonIsabela.style('background', 'lightpink');
 
-buttonIsaira.position(10,350);
+buttonIsaira.position(220,350);
 buttonIsaira.style('width', '200px');
 buttonIsaira.style('height', '40px');
 buttonIsaira.style('background', 'lightpink');
 
-buttonLuis.position(220,350);
+buttonLuis.position(220,400);
 buttonLuis.style('width', '200px');
 buttonLuis.style('height', '40px');
 buttonLuis.style('background', 'lightblue');
 
-buttonMariaS.position(220,400);
+buttonMariaS.position(220,450);
 buttonMariaS.style('width', '200px');
 buttonMariaS.style('height', '40px');
 buttonMariaS.style('background', 'lightpink');
 
-buttonMariaJ.position(10,400);
+buttonMariaJ.position(10,450);
 buttonMariaJ.style('width', '200px');
 buttonMariaJ.style('height', '40px');
 buttonMariaJ.style('background', 'lightpink');
 
-buttonMariaH.position(10,450);
+buttonMariaH.position(10,500);
 buttonMariaH.style('width', '200px');
 buttonMariaH.style('height', '40px');
 buttonMariaH.style('background', 'lightpink');
 
-buttonNaty.position(220,450);
+buttonNaty.position(220,500);
 buttonNaty.style('width', '200px');
 buttonNaty.style('height', '40px');
 buttonNaty.style('background', 'lightpink');
 
-buttonruan.position(10,500);
+buttonruan.position(10,550);
 buttonruan.style('width', '200px');
 buttonruan.style('height', '40px');
 buttonruan.style('background', 'lightblue');
 
-buttonSilvia.position(220,500);
+buttonSilvia.position(220,550);
 buttonSilvia.style('width', '200px');
 buttonSilvia.style('height', '40px');
 buttonSilvia.style('background', 'lightpink');
 
-buttontati.position(10,550);
+buttontati.position(10,600);
 buttontati.style('width', '200px');
 buttontati.style('height', '40px');
 buttontati.style('background', 'lightpink');
 
-buttonJoao.position(220,550);
+buttonJoao.position(10,400);
 buttonJoao.style('width', '200px');
 buttonJoao.style('height', '40px');
 buttonJoao.style('background', 'lightblue');
 
-buttonVictor.position(10,600);
+buttonVictor.position(220,600);
 buttonVictor.style('width', '200px');
 buttonVictor.style('height', '40px');
 buttonVictor.style('background', 'lightblue');
+
+buttonGilce.mousePressed(() => {
+  title.hide()
+  title2.hide()
+  title3.hide()
+  title3.hide()
+  buttonIsaira.hide()
+  buttonAntonio.hide()
+  buttonBruno.hide()
+  buttonCecilia.hide()
+  buttonCleonice.hide()
+  buttonEliana.hide()
+  buttonElvis.hide()
+  buttonFranciele.hide()
+  buttonFernanda.hide()
+  buttonGeovana.hide()
+  buttonGilce.hide()
+  buttonGilce.hide()
+  buttonIsabela.hide()
+  buttonJoao.hide()
+  buttonLuis.hide()
+  buttonMariaS.hide()
+  buttonMariaJ.hide()
+  buttonMariaH.hide()
+  buttonNaty.hide()
+  buttonruan.hide()
+  buttontati.hide()
+  buttonSilvia.hide()
+  buttonVictor.hide()
+  buttonAndressa.hide()
+  buttonAngela.hide()
+  gameState=1
+  image = createImg("gilce.png")
+  image.position(canW-130,50)
+  image.size(70,70);
+  image.style('border-radius', '40px');
+  image.style('border-style', 'solid');
+  image.style('border-width', '10px');
+  image.style('border-color', 'pink');
+});
 
 buttontati.mousePressed(() => {
   title.hide()
@@ -234,6 +285,7 @@ buttontati.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -270,6 +322,7 @@ buttonruan.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -306,6 +359,7 @@ buttonAndressa.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -342,6 +396,7 @@ buttonAngela.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -378,6 +433,7 @@ buttonAntonio.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -414,6 +470,7 @@ buttonBruno.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -450,6 +507,7 @@ buttonCecilia.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -486,6 +544,7 @@ buttonCleonice.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -522,6 +581,7 @@ buttonEliana.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -558,6 +618,7 @@ buttonElvis.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -594,6 +655,7 @@ buttonFernanda.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -630,6 +692,7 @@ buttonFranciele.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -666,6 +729,7 @@ buttonGeovana.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -702,6 +766,7 @@ buttonIsabela.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -737,6 +802,7 @@ buttonIsaira.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -773,6 +839,7 @@ buttonLuis.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -809,6 +876,7 @@ buttonMariaJ.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -845,6 +913,7 @@ buttonMariaS.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -881,6 +950,7 @@ buttonMariaH.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -917,6 +987,7 @@ buttonNaty.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -953,6 +1024,7 @@ buttonSilvia.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -989,6 +1061,7 @@ buttonJoao.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -1025,6 +1098,7 @@ buttonVictor.mousePressed(() => {
   buttonFranciele.hide()
   buttonFernanda.hide()
   buttonGeovana.hide()
+  buttonGilce.hide()
   buttonIsabela.hide()
   buttonJoao.hide()
   buttonLuis.hide()
@@ -1126,10 +1200,10 @@ function draw() {
   text("Tesouro espiritual: "+ treasureCollection,canW-220,30);
 
   
-  text(" Toque",40,canH-70);
-  text("<<<<<< ",40,canH-50);
-  text("Toque ",canW-100,canH-70);
-  text(">>>>>> ",canW-100,canH-50);
+  text(" Toque",10,canH-70);
+  text("<<<<<<<<<<<<<<<",10,canH-50);
+  text("Toque ",canW-70,canH-70);
+  text(">>>>>>>>>>>>>>>",canW-180,canH-50);
  
   
   }
